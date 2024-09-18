@@ -1,0 +1,51 @@
+.container-events{
+    width: 100%;
+    background-color: #01203f;
+}
+
+.header-events{
+    display: flex;
+    background-color: #01203f;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    height: 150px;
+}
+
+.list-events{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 1rem;
+}
+
+.card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.divider-events-title{
+    border-bottom: 1px solid #ffffff26
+}
+
+.divider-events-title > p{
+    color: #8ca6c2;
+}
+
+.divider-events-title > p, .divider-events-title > h1{
+    text-align: center;
+}
+
+.custom-bg{
+    background-color: #060e23;
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.1), 2px 2px 2px rgba(255, 255, 255, 0.1); /* Brilho suave */
+
+}
+
+.card-text{
+    color: #cccccc;
+}
