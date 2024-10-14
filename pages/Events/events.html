@@ -27,7 +27,7 @@
                       <a class="nav-link" aria-current="page" href="../Home/home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#about-us">Sobre nos</a>
+                        <a class="nav-link" aria-current="page" href="../about.html">Sobre nós</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" href="./events.html">Eventos</a>
@@ -45,7 +45,7 @@
     <div class="container-events">
         <div class="header-events">
             <div class="container-md divider-events-title">
-                <h1>Todos os seus eventos em um so lugar</h1>
+                <h1>Todos os seus eventos em um só lugar</h1>
                 <p>Aqui você irá encontrar a lista dos próximos eventos de tecnologia que irão rolar no Brasil</p>
             </div>
         </div>
@@ -63,6 +63,28 @@
           </nav>
       </div>
     </div>
+
+
+    <script>
+        // Quando a página carrega, adiciona a classe para a animação de slide-in
+        window.addEventListener('load', function() {
+          document.body.classList.add('loaded');
+        });
+      
+        document.querySelectorAll('.nav-link, .btn').forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault(); // Previne a navegação imediata
+      
+            // Aplica a classe slide-out ao body
+            document.body.classList.add('slide-out');
+      
+            // Espera a transição terminar antes de mudar de página
+            setTimeout(() => {
+              window.location.href = this.href; // Redireciona para a nova página
+            }, 500); // Tempo da transição (mesmo que o tempo da animação)
+          });
+        });
+    </script>
     
     <script src="events.js"></script>
 
