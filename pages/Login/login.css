@@ -3,13 +3,13 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: calc(100vh - 57px);
+    height: calc(105vh - 50px);
 }
 
 .register-area{
     display: flex;
     width: 50%;
-    height: 800px;
+    height: 600px;
     border-radius: 20px;
     background-color: rgb(230, 234, 255);
 }
