@@ -20,14 +20,14 @@ body{
 .expo-logo{
     max-width: 200px;
 }
-/* 
+
 .leading{
-    max-width: 1200px;
-} */
+    max-width: 500px;
+}
 
 
 .leading > h1{
-    font-size: 65px;
+    font-size: 4rem;
     color: white;
     white-space: normal; 
 }
@@ -50,6 +50,9 @@ body{
 
 .banner{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
     gap: 30px;
     height: calc(100vh - 70px - 10rem);
@@ -360,71 +363,115 @@ body{
     top: 0px;
   }
 
-  .card-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 50px;
-  }
-  
-  .card {
-    width: 500px;
-    height: 450px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.3s ease;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
+  /* Configuração geral da seção */
+.event-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;   /* Centraliza a seção na página */
+}
 
-  .card:hover {
-    transform: scale(1.05);
+/* Estilização de cada evento */
+.event-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1s ease, transform 1s ease;
+  width: 100%;
+  cursor: pointer;
+}
+
+.event-item .text {
+  flex: 1;
+  padding: 0 20px;
+  box-sizing: border-box;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Estilização da imagem */
+.event-item .image {
+  flex: 1;
+  max-width: 500px;  /* Define um tamanho fixo para as imagens */
+  height: auto;      /* Mantém a proporção da imagem */
+  border-radius: 8px;
+  object-fit: cover; /* Corta a imagem para caber no tamanho definido */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.text.right {
+  text-align: right;
+}
+
+.event-item:hover, .event-item .image:hover{
+  transform: scale(1.2);
+  border-radius: 10px;
+  background-color: #f5f5f5ad;
+}
+
+/* Aplica a animação de entrada quando o item está visível */
+.event-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.separator-events{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 40%;
+  padding-block: 2rem;
+}
+
+.separator-events > h2{
+  padding-inline: 1rem;
+}
+
+.leading-events-section{
+  padding-block: 2rem;
+}
+
+@media (max-width: 1400px) {
+  .leading > h1 {
+    font-size: 3rem;
   }
-  
-  .card-content {
-    position: relative;
-    padding: 20px;
+  .banner > img{
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .leading > h1 {
+    font-size: 2.5rem;
+  }
+  .banner > img{
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner{
+    width: auto;
+    height: 100%;
     text-align: center;
+    flex-direction: column-reverse; 
   }
-  
-  .card h3 {
-    margin: 0;
-    color: #333;
-  }
-  
-  .card-text {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-  }
-  
-  .card:hover .card-text {
-    opacity: 1;
-    max-height: 150px;
-    margin-top: 10px;
-  }
-  
+}
 
-  @media (max-width: 1024px) {
-    .swiper-slide {
-      justify-content: center;
-    }
+
+@media (max-width: 1024px) {
+  .swiper-slide {
+    justify-content: center;
   }
-  
-  @media (max-width: 500px) {
-    .outer-container {
-      padding-top: 0px;
-      padding-right: 20px;
-      padding-bottom: 0px;
-      padding-left: 20px;
-    }
+}
+
+@media (max-width: 500px) {
+  .outer-container {
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
   }
+}

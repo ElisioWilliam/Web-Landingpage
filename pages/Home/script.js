@@ -6,6 +6,20 @@ let isDeleting = false;
 let charIndex = 0;
 let velocidade = 100; 
 
+document.addEventListener("scroll", function() {
+  const eventItems = document.querySelectorAll(".event-item");
+
+  eventItems.forEach((item) => {
+      const itemTop = item.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (itemTop < windowHeight - 100) {
+          item.classList.add("visible");
+      }
+  });
+});
+
+
 function digitar() {
   const textoAtual = textos[indice];
   
