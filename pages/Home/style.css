@@ -363,15 +363,13 @@ body{
     top: 0px;
   }
 
-  /* Configuração geral da seção */
 .event-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;   /* Centraliza a seção na página */
+  margin: 0 auto;
 }
 
-/* Estilização de cada evento */
 .event-item {
   display: flex;
   align-items: center;
@@ -390,13 +388,12 @@ body{
   transition: opacity 1s ease, transform 1s ease;
 }
 
-/* Estilização da imagem */
 .event-item .image {
   flex: 1;
-  max-width: 500px;  /* Define um tamanho fixo para as imagens */
-  height: auto;      /* Mantém a proporção da imagem */
+  max-width: 500px;
+  height: auto;
   border-radius: 8px;
-  object-fit: cover; /* Corta a imagem para caber no tamanho definido */
+  object-fit: cover;
   transition: opacity 1s ease, transform 1s ease;
 }
 
@@ -410,7 +407,6 @@ body{
   background-color: #f5f5f5ad;
 }
 
-/* Aplica a animação de entrada quando o item está visível */
 .event-item.visible {
   opacity: 1;
   transform: translateY(0);
@@ -421,7 +417,7 @@ body{
   justify-content: center;
   align-items: center;
   width: 100%;
-  opacity: 40%;
+  opacity: 4  0%;
   padding-block: 2rem;
 }
 
