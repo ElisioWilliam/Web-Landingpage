@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 40px);
+    height: calc(100vh - 82px);
 }
 
 .register-area{
