@@ -57,3 +57,6 @@
  h3{
     font-size: 0.8rem;
  }
+ body{
+    background-image: linear-gradient(#011f3f , white 110%);
+ }
