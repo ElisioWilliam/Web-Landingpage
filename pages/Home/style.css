@@ -132,8 +132,7 @@ body{
 
 #divider {
 	height: 80px;
-	width: 2px;
-	background: blue;
+	width: 5px;
 	background: linear-gradient( hsl(197, 100%, 83%), hsl(231, 100%, 65%), hsl(197, 100%, 83%));
 }
 
@@ -447,6 +446,12 @@ body{
   }
 }
 
+@media (max-width: 1050px) {
+  .event-item{
+    transform: translateY(50px);
+  }
+}
+
 @media (max-width: 1000px) {
   .banner{
     width: auto;
@@ -454,12 +459,57 @@ body{
     text-align: center;
     flex-direction: column-reverse; 
   }
+
+  .event-item .image {
+    max-width: 300px;
+  }
 }
 
 
 @media (max-width: 1024px) {
   .swiper-slide {
     justify-content: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .event-item{
+    flex-direction: column-reverse;
+  }
+  .event-item .image {
+    margin: 1rem;
+  }
+
+  .text.right {
+    text-align: left;
+  }
+
+  .event-right{
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 700px) {
+  #divider {
+    height: 1px;
+	  width: 70%;
+    background: linear-gradient(90deg, hsl(197, 100%, 93%), hsl(231, 100%, 65%), hsl(197, 100%, 93%));
+  }
+
+  .card-about{
+    flex-direction: column;
+  }
+
+  .footer-container{
+    text-align: center;
+    justify-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .fale-conosco{
+    gap: initial;
+    text-align: center;
   }
 }
 
