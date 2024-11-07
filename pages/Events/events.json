@@ -1,97 +1,97 @@
 [
     {
         "id": 1,
-        "title" : "Evento 1",
+        "title" : "Big Data Brazil Experience",
         "url": "../../assets/imagens/events/big-data.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        "description": "O evento reúne líderes de diversas indústrias, startups, investidores e especialistas para discutir as tendências mais atuais em tecnologia, negócios e cultura digital."
     },
     {
         "id": 1,
-        "title" : "Evento 1",
-        "url": "../../assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        "title" : "5G Network",
+        "url":"../../assets/imagens/events/freepik__expand__32544.png",
+        "description": "Palestras, carreta 5G, networking e muito mais marcam presença da Findes e instituições na Mec Show. "
     },
     {
         "id": 1,
-        "title" : "Evento 1",
+        "title" : "Embarcados experience",
         "url": "../../assets/imagens/events/embarcados.png",
+        "description": "“Embarcados Experience 2024“, no  hotel Novotel São Paulo Center Norte. Será um grande evento realizado pelo Embarcados, em sua quinta edição."
+    },
+    {
+        "id": 1,
+        "title" : "Hacking na Web Day",
+        "url": "../../assets/imagens/events/hacking-web-day.png",
+        "description": "A ideia central do evento é ter um encontro da comunidade do hacking , com palestras e espaço para patrocinadores, apoiadores e comunidades."
+    },
+    {
+        "id": 1,
+        "title" : "Techno Mega Sale",
+        "url": "../../assets/imagens/events/freepik__expand__23038.png",
+        "description": "Uma programação que inclui palestras de grandes nomes do setor, workshops e oportunidades de networking, o Web Summit Rio é um ponto de encontro essencial para quem busca se conectar com o futuro da tecnologia."
+    },
+    {
+        "id": 1,
+        "title" : "Techno music festival",
+        "url": "../../assets/imagens/events/freepik__expand__10181.png",
+        "description": "Techno music, palestras de grandes nomes do setor, workshops e oportunidades de networking."
+    },
+    {
+        "id": 1,
+        "title" : "Tecnologia assistiva",
+        "url": "../../assets/imagens/events/tec-assistiva.png",
+        "description": "O evento reúne líderes de diversas indústrias, startups de tecnologia assistiva."
+    },
+    {
+        "id": 1,
+        "title" : "Global Technology",
+        "url": "../../assets/imagens/events/rb_2149082902 (2).png",
+        "description": "É um evento de tecnologia e inovação que reúne líderes das maiores empresas do Brasil e do mundo."
+    },
+    {
+        "id": 1,
+        "title" : "Technolgy",
+        "url": "../../assets/imagens/events/freepik__expand__4040.png",
+        "description": "Palestras, carreta 5G, networking e muito mais marcam presença da Findes e instituições na Mec Show."
+    },
+    {
+        "id": 1,
+        "title" : "Masterclass em Saneamento",
+        "url": "../../assets/imagens/events/masterclass.png",
+        "description": "Masterclass, palestras de grandes nomes do setor, workshops e oportunidades de networking."
+    },
+    {
+        "id": 1,
+        "title" : "The Solution You Need",
+        "url": "../../assets/imagens/events/freepik__expand__27728.png",
+        "description": "palestras de grandes nomes do setor, workshops e oportunidades de networking, líderes das maiores empresas do Brasil e do mundo."
+    },
+    {
+        "id": 1,
+        "title" : "Discover The Future",
+        "url": "../../assets/imagens/events/freepik__expand__69058.png",
+        "description": "Discover The future. Palestras, carreta 5G, networking e muito mais marcam presença da Findes e instituições na Mec Show."
+    },
+    {
+        "id": 1,
+        "title" : "CES",
+        "url": "../../assets/imagens/events/CES.png",
         "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
     {
         "id": 1,
-        "title" : "Evento 1",
+        "title" : "Evento WS",
+        "url": "../../assets/imagens/events/computex.png",
+        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "id": 1,
+        "title" : "Hacking na Web",
         "url": "../../assets/imagens/events/hacking-web-day.png",
         "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
     {
         "id": 1,
-        "title" : "Evento 1",
-        "url": "../../assets/imagens/events/masterclass.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "../../assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "../../assets/imagens/events/tec-assistiva.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "../../assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "../../assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "../../assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "../../assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "../../assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "../../assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "../../assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "../../assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
+        "title" : "Apix 2025",
         "url": "../../assets/imagens/events/apix.png",
         "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
     },
