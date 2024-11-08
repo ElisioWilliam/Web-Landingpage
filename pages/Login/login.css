@@ -8,7 +8,6 @@
 
 .register-area{
     display: flex;
-    width: 50%;
     height: 600px;
     border-radius: 20px;
     background-color: rgb(230, 234, 255);
@@ -56,7 +55,4 @@
 }
  h3{
     font-size: 0.8rem;
- }
- body{
-    background-image: linear-gradient(#011f3f , white 110%);
  }
