@@ -2,13 +2,14 @@
 .container-register{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    height: calc(100vh - 82px);
+    height: calc(100vh - 81.59px);
 }
 
 .register-area{
     display: flex;
-    width: 100%;
+    max-width: 1000px;
     height: 580px;
     border-radius: 50px;
     background-color: rgb(230, 234, 255);
@@ -51,6 +52,23 @@
     padding: 5rem;
     line-height: 15px;
 }
-body{
-    background-image: linear-gradient(#011f3f , white 110%);
- }
+
+
+@media(max-width: 1000px) {
+    .leading-text-area{
+        display: none;
+    }
+
+    .register-area{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-inline: 2rem;
+    }
+
+    .register-form{
+        width: auto;
+        padding: 2.5rem;
+        
+    }
+}
