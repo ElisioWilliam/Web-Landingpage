@@ -3,13 +3,13 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: calc(105vh - 127px);
+    height: calc(100vh - 81.59px);
 }
 
 .register-area{
     display: flex;
     height: 600px;
-    border-radius: 20px;
+    border-radius: 50px;
     background-color: rgb(230, 234, 255);
 }
 
@@ -55,4 +55,21 @@
 }
  h3{
     font-size: 0.8rem;
+ }
+
+
+ @media(max-width: 600px){
+    .leading-text-area > img{
+        max-width: 300px;
+    }
+    
+    .leading-text-area > h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .register-form{
+        padding: 3rem;
+    }
  }
