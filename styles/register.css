@@ -10,7 +10,7 @@
 .register-area{
     display: flex;
     max-width: 1000px;
-    height: 580px;
+    height: 650px;
     border-radius: 50px;
     background-color: rgb(230, 234, 255);
 }
