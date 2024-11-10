@@ -32,7 +32,7 @@
             </div>
             <div>
               <a class="btn btn-sm btn-outline-primary me-2 ms-4" href="./login.html">Entrar</a>
-              <a class="btn btn-sm btn-primary me-2" href="./start.html">Começar</a>
+              <a class="btn btn-sm btn-primary me-2" href="./register.html">Começar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -54,7 +54,7 @@
                     <form id="form" class="w-100 g-3 needs-validation">
                         <div class="mb-3">
                             <label for="exampleInputName1" class="form-label">Nome completo</label>
-                            <input type="text" class="form-control required" oninput="nameValidate()">
+                            <input type="text" class="form-control required" name="nome" oninput="nameValidate()">
                             <div class="invalid-feedback">
                                É obrigatório ter no minimo 5 caracteres
                             </div>
@@ -62,21 +62,21 @@
 
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Email</label>
-                          <input type="email" class="form-control required" id="exampleInputEmail1" aria-describedby="emailHelp" oninput="emailValidate()">
+                          <input type="email" class="form-control required" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" oninput="emailValidate()">
                           <div class="invalid-feedback">
                             Informe um email valido.
                           </div>
                         </div>
                         <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">Senha</label>
-                          <input type="password" class="form-control required" id="exampleInputPassword1" oninput="mainPasswordValidate()">
+                          <input type="password" class="form-control required" name="password" id="exampleInputPassword1" oninput="mainPasswordValidate()">
                           <div class="invalid-feedback">
                             A senha precisa ser no minimo 6 digitos.
                           </div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword2" class="form-label">Confirmar Senha</label>
-                            <input type="password" class="form-control required" id="exampleInputPassword2" oninput="comparePassword()">
+                            <input type="password" class="form-control required" name="confirmPassword" id="exampleInputPassword2" oninput="comparePassword()">
                             <span class="span-required"></span>
                             <div class="invalid-feedback">
                               As senhas devem ser compatíveis.
@@ -86,7 +86,7 @@
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1">Desejo receber informações sobre novos eventos</label>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+                        <button type="submit" name="submitBtn" id="submitBtn" class="btn btn-primary w-100">Submit</button>
                       </form>
                       <p style="text-align: center;">Ainda não tem conta? <a href="./login.html">Clique aqui</a></p>
                 </div>
@@ -94,9 +94,8 @@
             </div>
         </div>
 
-
-
     <script src="./scripts/register.js"></script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
