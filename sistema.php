@@ -73,9 +73,9 @@
                                 <img src="./assets/imagens/account.png" class="avatar img-fluid" alt="">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-lg-end rounded">
-                                <li><button class="dropdown-item" type="button">Perfil</button></li>
-                                <li><button class="dropdown-item" type="button">Configurações</button></li>
-                                <li><button class="dropdown-item" type="button">Sair</button></li>
+                                <li><a class="dropdown-item" type="button">Perfil</a></li>
+                                <li><a class="dropdown-item" type="button">Configurações</a></li>
+                                <li><a href="logout.php" class="dropdown-item" type="button">Sair</a></li>
                             </ul>
                         </li>
                     </ul>
