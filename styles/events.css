@@ -20,6 +20,32 @@
     padding: 1rem;
 }
 
+/* Ajusta a proporção da imagem para 16:9 */
+.card-img-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Proporção 16:9 */
+    overflow: hidden;
+  }
+  
+  .card-img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Limitar o texto e adicionar reticências se for muito longo */
+  .card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limita o texto a 3 linhas */
+    -webkit-box-orient: vertical;
+  }
+
 .card {
     cursor: pointer;
     transition: transform 0.3s ease;

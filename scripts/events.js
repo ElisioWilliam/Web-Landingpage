@@ -4,9 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let totalPages = 1;
 
     function createCard(event) {
+        const atag = document.createElement('a');
+        atag.style.textDecoration = 'none';
+        atag.href = "register.html"
+
         const cardDiv = document.createElement('div');
         cardDiv.classList.add('card', 'text-white', 'custom-bg', 'mb-3');
         cardDiv.style.width = '18rem';
+
+        const cardImgDiv = document.createElement('div');
+        cardImgDiv.classList.add('card-img-container');
 
         const img = document.createElement('img');
         img.src = event.url;
@@ -26,10 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cardBody.appendChild(cardTitle);
         cardBody.appendChild(cardText);
-        cardDiv.appendChild(img);
+        cardDiv.appendChild(cardImgDiv);
+        cardImgDiv.appendChild(img);
         cardDiv.appendChild(cardBody);
+        atag.appendChild(cardDiv);
 
-        return cardDiv;
+        return atag;
     }
 
     async function loadEvents() {

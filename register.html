@@ -7,32 +7,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Home/style.css">
-    <link rel="stylesheet" href="./start.css">
-    <title>Digital Event</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/register.css">
+    <title>Vorg Technologies</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary dark">
         <div class="container-md">
-            <a href="../Home/home.html">
-                <img class="expo-logo" src="../../assets/imagens/logo-vorg/vorg-white.png" alt="">
+            <a href="./home.html">
+                <img class="expo-logo" src="./assets/imagens/logo-vorg/vorg-white.png" alt="">
             </a>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="../Home/home.html">Home</a>
+                      <a class="nav-link" aria-current="page" href="./home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="../about.html">Sobre nós</a>
+                      <a class="nav-link" aria-current="page" href="./about.html">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="../Events/events.html">Eventos</a>
+                      <a class="nav-link" href="./events.html">Eventos</a>
                     </li>
                 </ul>
             </div>
             <div>
-              <a class="btn btn-sm btn-outline-primary me-2 ms-4" href="../Login/login.html">Entrar</a>
-              <a class="btn btn-sm btn-primary me-2" href="../Start/start.html">Começar</a>
+              <a class="btn btn-sm btn-outline-primary me-2 ms-4" href="./login.html">Entrar</a>
+              <a class="btn btn-sm btn-primary me-2" href="./register.html">Começar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -46,59 +46,56 @@
 
                 <div class="leading-text-area">
                     <h2>Sua jornada de aprendizado está prestes a avançar!</h2>
-                    <img src="../../assets/imagens/woman-study.svg" alt="">
+                    <img src="./assets/imagens/woman-study.svg" alt="">
                 </div>
 
                 <div class="register-form">
                     <h4>Preencha o formulário para ter acesso completo</h4>
-                    <form class="w-100">
+                    <form id="form" class="w-100 g-3 needs-validation">
                         <div class="mb-3">
                             <label for="exampleInputName1" class="form-label">Nome completo</label>
-                            <input type="email" class="form-control" id="exampleInputName1" aria-describedby="emailHelp">
+                            <input type="text" class="form-control required" name="nome" oninput="nameValidate()">
+                            <div class="invalid-feedback">
+                               É obrigatório ter no minimo 5 caracteres
+                            </div>
                         </div>
 
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">Iremos usar para informar sobre seus eventos cadastrados</div>
+                          <input type="email" class="form-control required" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" oninput="emailValidate()">
+                          <div class="invalid-feedback">
+                            Informe um email valido.
+                          </div>
                         </div>
                         <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">Senha</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
+                          <input type="password" class="form-control required" name="password" id="exampleInputPassword1" oninput="mainPasswordValidate()">
+                          <div class="invalid-feedback">
+                            A senha precisa ser no minimo 6 digitos.
+                          </div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword2" class="form-label">Confirmar Senha</label>
-                            <input type="password" class="form-control" id="exampleInputPassword2">
+                            <input type="password" class="form-control required" name="confirmPassword" id="exampleInputPassword2" oninput="comparePassword()">
+                            <span class="span-required"></span>
+                            <div class="invalid-feedback">
+                              As senhas devem ser compatíveis.
+                            </div>
                           </div>
                         <div class="mb-3 form-check">
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1">Desejo receber informações sobre novos eventos</label>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
-                        <p style="text-align: center; margin-top: 20px;">Ainda não tem conta? <a href="../Login/login.html">Clique aqui</a></p>
+                        <button type="submit" name="submitBtn" id="submitBtn" class="btn btn-primary w-100">Submit</button>
                       </form>
+                      <p style="text-align: center;">Ainda não tem conta? <a href="./login.html">Clique aqui</a></p>
                 </div>
 
             </div>
         </div>
 
-    <script>
-      window.addEventListener('load', function() {
-        document.body.classList.add('loaded');
-      });
-    
-      document.querySelectorAll('.nav-link, .btn').forEach(link => {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-    
-          document.body.classList.add('slide-out');
-    
-          setTimeout(() => {
-            window.location.href = this.href;
-          }, 500);
-        });
-      });
-    </script>
+    <script src="./scripts/register.js"></script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
