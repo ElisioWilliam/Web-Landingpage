@@ -1,8 +1,15 @@
 <?php
     require 'events.php';
-    require 'auth.php';
+    require 'auth.php'; 
+
+    if (isset($_GET['id'])) {
+        $eventId = intval($_GET['id']);
+        $event = getEventById($connection, $eventId);
+    } else {
+        echo "Evento não encontrado.";
+        exit;
+    }
     
-    $userEvents = getUserEvents($connection, $userId);
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,6 +22,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/sistema.css">
+    <link rel="stylesheet" href="./styles/sistema-event.css">  
     <link rel="icon" href="./assets/imagens/logo-vorg/vorg-icon-black.png">
 </head>
 
@@ -31,7 +39,7 @@
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                    <a href="sistema-events.php" class="sidebar-link">
+                <a href="sistema-events.php" class="sidebar-link">
                         <i class="lni lni-agenda"></i>
                         <span>Eventos</span>
                     </a>
@@ -80,31 +88,27 @@
                 </div>
             </nav>
             <main class="content px-3 py-4">
-                <div class="container-fluid">
+                <div class="container-md">
                     <div class="mb-3">
-                        <?php
-                            echo "<h3 class='fw-bold fs-4 mb-3'>Seja bem vindo $logado</h3>"
-                        ?>
-                        <?php if (!empty($userEvents)): ?>
-                        <table border="1" cellpadding="10" cellspacing="0" class="w-100">
-                            <tr>
-                                <th>ID</th>
-                                <th>Nome do Evento</th>
-                                <th>Descrição</th>
-                                <th>Data do evento</th>
-                            </tr>
-                            <?php foreach ($userEvents as $event): ?>
-                                <tr>
-                                    <td><?php echo htmlspecialchars($event['id']); ?></td>
-                                    <td><?php echo htmlspecialchars($event['title']); ?></td>
-                                    <td><?php echo htmlspecialchars($event['description']); ?></td>
-                                    <td><?php echo htmlspecialchars($event['event_date']); ?></td>
-                                </tr>
-                            <?php endforeach; ?>
-                        </table>
-                        <?php else: ?>
-                        <p>Você não está cadastrado em nenhum evento.</p>
-                        <?php endif; ?>
+                    <?php if ($event): ?>
+                        <div class="evento-detalhe-card">
+                            <img src="<?php echo $event['url_img']; ?>" alt="<?php echo $event['title']; ?>" class="evento-imagem-detalhe">
+                            <div class="event-text-and-button">
+
+                                <div>
+                                    <h2><?php echo htmlspecialchars($event['title']); ?></h2>
+                                    <p class="evento-data"><?php echo formatarData($event['event_date']); ?></p>
+                                    <p class="evento-descricao"><?php echo htmlspecialchars($event['description']); ?></p>
+                                </div>
+                                <div class="subscribe-button">
+                                    <p>Não perca tempo</p>
+                                    <button>Inscreva-se</button>
+                                </div>
+                            </div>
+                        </div>
+                    <?php else: ?>
+                        <p>Evento não encontrado.</p>
+                    <?php endif; ?>
 
                     </div>
                 </div>

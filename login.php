@@ -26,10 +26,12 @@
         $usuario = $result->fetch_assoc();
         
         if ($usuario && password_verify($senha, $usuario['senha'])) {
+            $_SESSION['user_id'] = $usuario['id'];;
             $_SESSION['email'] = $email;
             $_SESSION['nome'] = $usuario['nome'];
             echo json_encode(['success' => true, 'message' => 'Usuário logado!']);
         } else {
+            unset($_SESSION['user_id']);
             unset($_SESSION['email']);
             unset($_SESSION['nome']);
             echo json_encode(['success' => false, 'message' => 'Falha ao logar! Senha ou e-mail incorretos.']);

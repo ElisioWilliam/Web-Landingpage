@@ -66,22 +66,19 @@
 
 
     <script>
-        // Quando a página carrega, adiciona a classe para a animação de slide-in
         window.addEventListener('load', function() {
           document.body.classList.add('loaded');
         });
       
         document.querySelectorAll('.nav-link, .btn').forEach(link => {
           link.addEventListener('click', function(e) {
-            e.preventDefault(); // Previne a navegação imediata
+            e.preventDefault();
       
-            // Aplica a classe slide-out ao body
             document.body.classList.add('slide-out');
       
-            // Espera a transição terminar antes de mudar de página
             setTimeout(() => {
-              window.location.href = this.href; // Redireciona para a nova página
-            }, 500); // Tempo da transição (mesmo que o tempo da animação)
+              window.location.href = this.href;
+            }, 500);
           });
         });
     </script>

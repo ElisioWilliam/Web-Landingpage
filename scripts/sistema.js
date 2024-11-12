@@ -5,18 +5,17 @@ const logoSidebar = document.getElementById("logo-sidebar");
 let menuItems = document.querySelectorAll('.sidebar-link');
 
 
-// Função para alternar a visibilidade dos botões
 function toggleButtonsDisplay() {
     if (sidebar.classList.contains("expand")) {
-        hambgInside.style.display = "none"; // Mostra o botão de dentro quando expandido
-        hambgOutside.style.display = "flex"; // Esconde o botão de fora
+        hambgInside.style.display = "none";
+        hambgOutside.style.display = "flex";
         logoSidebar.style.display = "flex";
         menuItems.forEach(function(elemento) {
             elemento.style.justifyContent = "left";
         });
     } else {
-        hambgOutside.style.display = "none"; // Mostra o botão de fora
-        hambgInside.style.display = "flex"; // Esconde o botão de dentro quando retraído
+        hambgOutside.style.display = "none"; 
+        hambgInside.style.display = "flex";
         logoSidebar.style.display = "none"
         menuItems.forEach(function(elemento) {
             elemento.style.justifyContent = "center";
@@ -25,19 +24,15 @@ function toggleButtonsDisplay() {
     }
 }
 
-// Evento de clique para expandir/retrair usando o botão de dentro
 hambgInside.addEventListener("click", function () {
-    sidebar.classList.add("expand"); // Retrai a sidebar
-    toggleButtonsDisplay(); // Atualiza os botões
+    sidebar.classList.add("expand");
+    toggleButtonsDisplay();
 });
 
 
-// Evento de clique para expandir/retrair usando o botão de fora
 hambgOutside.addEventListener("click", function () {
-    sidebar.classList.remove("expand"); // Expande a sidebar
-    toggleButtonsDisplay(); // Atualiza os botões
+    sidebar.classList.remove("expand");
+    toggleButtonsDisplay();
 });
 
-
-// Chama a função para definir o estado inicial dos botões
 toggleButtonsDisplay();
