@@ -47,10 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const events = await response.json();
             totalPages = Math.ceil(events.length / eventsPerPage);
 
-            // função para exibir eventos paginados
             function displayEvents(page) {
                 const eventCardsContainer = document.getElementById('eventCards');
-                eventCardsContainer.innerHTML = ''; // limpa os cards anteriores
+                eventCardsContainer.innerHTML = '';
 
                 const startIndex = (page - 1) * eventsPerPage;
                 const endIndex = Math.min(startIndex + eventsPerPage, events.length);
@@ -65,9 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             function updatePagination(page) {
                 const pagination = document.getElementById('pagination');
-                pagination.innerHTML = ''; // limpa os botões anteriores
+                pagination.innerHTML = '';
 
-                // botão "primeira página"
                 const firstPageLi = document.createElement('li');
                 firstPageLi.classList.add('page-item');
                 if (page === 1) firstPageLi.classList.add('disabled');
@@ -78,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 firstPageLi.appendChild(firstPageBtn);
                 pagination.appendChild(firstPageLi);
 
-                // botão "página anterior"
                 const prevPageLi = document.createElement('li');
                 prevPageLi.classList.add('page-item');
                 if (page === 1) prevPageLi.classList.add('disabled');
@@ -89,11 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 prevPageLi.appendChild(prevPageBtn);
                 pagination.appendChild(prevPageLi);
 
-                // botões que representam cada pagina
                 for (let i = 1; i <= totalPages; i++) {
                     const pageLi = document.createElement('li');
                     pageLi.classList.add('page-item');
-                    if (i === page) pageLi.classList.add('active'); // marca a página atual
+                    if (i === page) pageLi.classList.add('active');
                     const pageBtn = document.createElement('button');
                     pageBtn.classList.add('page-link');
                     pageBtn.textContent = i;
@@ -102,7 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     pagination.appendChild(pageLi);
                 }
 
-                // botão "ir para próxima Página"
                 const nextPageLi = document.createElement('li');
                 nextPageLi.classList.add('page-item');
                 if (page === totalPages) nextPageLi.classList.add('disabled');
@@ -113,7 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 nextPageLi.appendChild(nextPageBtn);
                 pagination.appendChild(nextPageLi);
 
-                // botão "ir para última Página"
                 const lastPageLi = document.createElement('li');
                 lastPageLi.classList.add('page-item');
                 if (page === totalPages) lastPageLi.classList.add('disabled');

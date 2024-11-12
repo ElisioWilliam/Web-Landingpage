@@ -1,0 +1,59 @@
+
+.evento-detalhe-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.evento-imagem-detalhe{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.evento-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+}
+
+.event-text-and-button{
+    display: flex;
+    padding-top: 2rem;
+    justify-content: space-between;
+}
+
+.container-md{
+    max-width: 1005px !important;
+}
+
+.subscribe-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 1rem;
+}
+.subscribe-button p{
+    margin: 0;
+    font-weight: bold;
+}
+
+.subscribe-button button{
+    width: 100%;
+    border: none;
+    background-color: rgb(1, 1, 104);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+@media(max-width:1010px){
+    .event-text-and-button{
+        flex-wrap: wrap;
+    }
+    .subscribe-button{
+        width: 100%;
+    }
+}

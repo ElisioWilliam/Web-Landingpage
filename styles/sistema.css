@@ -65,10 +65,14 @@ body {
 
 #hambg-outside {
     height: 41.44px;
+    padding: 0.8rem;
+    background-color: #0e2238;
+    border-radius: 50px;
 }
 
 #hambg-outside i{
-    color: black;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
 }
 
 #hambg-inside {

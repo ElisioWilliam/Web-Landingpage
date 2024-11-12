@@ -260,7 +260,7 @@ body{
     display: flex;
     width: 175px;
     height: 175px;
-    border: 4px solid #007bff;
+    border: 1px solid #0000004f;
     border-radius: 50%;
     overflow: hidden;
   }

@@ -1,0 +1,36 @@
+.img-about{
+    max-width: 860px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+@media(max-width: 900px){
+    .img-about{
+        max-width: 760px;
+    }
+}
+
+@media(max-width: 800px){
+    .img-about{
+        max-width: 660px;
+    }
+}
+
+@media(max-width: 700px){
+    .img-about{
+        max-width: 560px;
+    }
+}
+
+@media(max-width: 600px){
+    .img-about{
+        max-width: 460px;
+    }
+}
+
+@media(max-width: 500px){
+    .img-about{
+        max-width: 360px;
+    }
+}

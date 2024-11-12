@@ -1,170 +1,162 @@
 [
-    {
-        "id": 1,
-        "title" : "Big Data Brazil Experience",
-        "url": "./assets/imagens/events/big-data.png",
-        "description": "O evento reúne líderes de diversas indústrias, startups, investidores e especialistas para discutir as tendências mais atuais em tecnologia, negócios e cultura digital."
-    },
-    {
-        "id": 1,
-        "title" : "5G Network",
-        "url":"./assets/imagens/events/freepik__expand__32544.png",
-        "description": "Palestras, carreta 5G, networking e muito mais marcam presença da Findes e instituições na Mec Show. "
-    },
-    {
-        "id": 1,
-        "title" : "Embarcados experience",
-        "url": "./assets/imagens/events/embarcados.png",
-        "description": "“Embarcados Experience 2024“, no  hotel Novotel São Paulo Center Norte. Será um grande evento realizado pelo Embarcados, em sua quinta edição."
-    },
-    {
-        "id": 1,
-        "title" : "Hacking na Web Day",
-        "url": "./assets/imagens/events/hacking-web-day.png",
-        "description": "A ideia central do evento é ter um encontro da comunidade do hacking , com palestras e espaço para patrocinadores, apoiadores e comunidades."
-    },
-    {
-        "id": 1,
-        "title" : "Techno Mega Sale",
-        "url": "./assets/imagens/events/freepik__expand__23038.png",
-        "description": "Uma programação que inclui palestras de grandes nomes do setor, workshops e oportunidades de networking, o Web Summit Rio é um ponto de encontro essencial para quem busca se conectar com o futuro da tecnologia."
-    },
-    {
-        "id": 1,
-        "title" : "Techno music festival",
-        "url": "./assets/imagens/events/freepik__expand__10181.png",
-        "description": "Techno music, palestras de grandes nomes do setor, workshops e oportunidades de networking."
-    },
-    {
-        "id": 1,
-        "title" : "Tecnologia assistiva",
-        "url": "./assets/imagens/events/tec-assistiva.png",
-        "description": "O evento reúne líderes de diversas indústrias, startups de tecnologia assistiva."
-    },
-    {
-        "id": 1,
-        "title" : "Global Technology",
-        "url": "./assets/imagens/events/rb_2149082902 (2).png",
-        "description": "É um evento de tecnologia e inovação que reúne líderes das maiores empresas do Brasil e do mundo."
-    },
-    {
-        "id": 1,
-        "title" : "Technolgy",
-        "url": "./assets/imagens/events/freepik__expand__4040.png",
-        "description": "Palestras, carreta 5G, networking e muito mais marcam presença da Findes e instituições na Mec Show."
-    },
-    {
-        "id": 1,
-        "title" : "Masterclass em Saneamento",
-        "url": "./assets/imagens/events/masterclass.png",
-        "description": "Masterclass, palestras de grandes nomes do setor, workshops e oportunidades de networking."
-    },
-    {
-        "id": 1,
-        "title" : "The Solution You Need",
-        "url": "./assets/imagens/events/freepik__expand__27728.png",
-        "description": "palestras de grandes nomes do setor, workshops e oportunidades de networking, líderes das maiores empresas do Brasil e do mundo."
-    },
-    {
-        "id": 1,
-        "title" : "Discover The Future",
-        "url": "./assets/imagens/events/freepik__expand__69058.png",
-        "description": "Discover The future. Palestras, carreta 5G, networking e muito mais marcam presença da Findes e instituições na Mec Show."
-    },
-    {
-        "id": 1,
-        "title" : "CES",
-        "url": "./assets/imagens/events/CES.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento WS",
-        "url": "./assets/imagens/events/computex.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Hacking na Web",
-        "url": "./assets/imagens/events/hacking-web-day.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Apix 2025",
-        "url": "./assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "./assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "./assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "./assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "./assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "./assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "./assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "./assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "./assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "./assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "./assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "./assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    },
-    {
-        "id": 1,
-        "title" : "Evento 1",
-        "url": "./assets/imagens/events/apix.png",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-    }
+  {
+    "id": 1,
+    "title": "Big Data Brazil Experience",
+    "url": "./assets/imagens/events/big-data.png",
+    "description": "O evento reúne líderes de diversas indústrias, startups, investidores e especialistas para discutir as tendências mais atuais em tecnologia, negócios e cultura digital.",
+    "event_date": "2024-11-24",
+    "created_at": "2024-11-21 14:35:12"
+  },
+  {
+    "id": 2,
+    "title": "5G Network",
+    "url": "./assets/imagens/events/freepik__expand__32544.png",
+    "description": "Palestras, carreta 5G, networking e muito mais marcam presença da Findes e instituições na Mec Show.",
+    "event_date": "2024-12-01",
+    "created_at": "2024-11-25 11:27:50"
+  },
+  {
+    "id": 3,
+    "title": "Embarcados experience",
+    "url": "./assets/imagens/events/embarcados.png",
+    "description": "“Embarcados Experience 2024“, no hotel Novotel São Paulo Center Norte. Será um grande evento realizado pelo Embarcados, em sua quinta edição.",
+    "event_date": "2024-12-10",
+    "created_at": "2024-11-30 09:15:35"
+  },
+  {
+    "id": 4,
+    "title": "Hacking na Web Day",
+    "url": "./assets/imagens/events/hacking-web-day.png",
+    "description": "A ideia central do evento é ter um encontro da comunidade do hacking, com palestras e espaço para patrocinadores, apoiadores e comunidades.",
+    "event_date": "2024-12-18",
+    "created_at": "2024-12-05 13:44:22"
+  },
+  {
+    "id": 5,
+    "title": "Techno Mega Sale",
+    "url": "./assets/imagens/events/freepik__expand__23038.png",
+    "description": "Uma programação que inclui palestras de grandes nomes do setor, workshops e oportunidades de networking.",
+    "event_date": "2025-01-05",
+    "created_at": "2024-12-20 08:32:14"
+  },
+  {
+    "id": 6,
+    "title": "Techno music festival",
+    "url": "./assets/imagens/events/freepik__expand__10181.png",
+    "description": "Techno music, palestras de grandes nomes do setor, workshops e oportunidades de networking.",
+    "event_date": "2025-01-11",
+    "created_at": "2024-12-28 17:58:07"
+  },
+  {
+    "id": 7,
+    "title": "Tecnologia assistiva",
+    "url": "./assets/imagens/events/tec-assistiva.png",
+    "description": "O evento reúne líderes de diversas indústrias, startups de tecnologia assistiva.",
+    "event_date": "2024-12-20",
+    "created_at": "2024-12-10 12:12:34"
+  },
+  {
+    "id": 8,
+    "title": "Global Technology",
+    "url": "./assets/imagens/events/global-technology.png",
+    "description": "É um evento de tecnologia e inovação que reúne líderes das maiores empresas do Brasil e do mundo.",
+    "event_date": "2025-01-17",
+    "created_at": "2024-12-30 15:19:49"
+  },
+  {
+    "id": 9,
+    "title": "Technolgy",
+    "url": "./assets/imagens/events/freepik__expand__4040.png",
+    "description": "Palestras, carreta 5G, networking e muito mais marcam presença da Findes e instituições na Mec Show.",
+    "event_date": "2024-12-27",
+    "created_at": "2024-12-15 10:45:30"
+  },
+  {
+    "id": 10,
+    "title": "Masterclass em Saneamento",
+    "url": "./assets/imagens/events/masterclass.png",
+    "description": "Masterclass, palestras de grandes nomes do setor, workshops e oportunidades de networking.",
+    "event_date": "2025-01-20",
+    "created_at": "2025-01-05 08:50:11"
+  },
+  {
+    "id": 11,
+    "title": "The Solution You Need",
+    "url": "./assets/imagens/events/freepik__expand__27728.png",
+    "description": "Palestras, workshops e networking com líderes empresariais.",
+    "event_date": "2024-12-23",
+    "created_at": "2024-12-10 16:40:22"
+  },
+  {
+    "id": 12,
+    "title": "Discover The Future",
+    "url": "./assets/imagens/events/freepik__expand__69058.png",
+    "description": "Discover The Future com ênfase em 5G e networking.",
+    "event_date": "2024-12-29",
+    "created_at": "2024-12-15 14:12:58"
+  },
+  {
+    "id": 13,
+    "title": "CES",
+    "url": "./assets/imagens/events/CES.png",
+    "description": "Evento anual de inovação tecnológica.",
+    "event_date": "2025-01-25",
+    "created_at": "2025-01-10 11:28:45"
+  },
+  {
+    "id": 14,
+    "title": "Evento WS",
+    "url": "./assets/imagens/events/computex.png",
+    "description": "Workshops e networking em tecnologia.",
+    "event_date": "2024-12-17",
+    "created_at": "2024-12-07 09:30:10"
+  },
+  {
+    "id": 15,
+    "title": "Ethical Hacking",
+    "url": "./assets/imagens/events/ethical-hacking.jpg",
+    "description": "Workshop sobre conceitos de hacking ético.",
+    "event_date": "2025-01-03",
+    "created_at": "2024-12-20 19:25:37"
+  },
+  {
+    "id": 16,
+    "title": "Apix 2025",
+    "url": "./assets/imagens/events/apix.png",
+    "description": "Evento de tecnologia com foco em API.",
+    "event_date": "2025-01-12",
+    "created_at": "2024-12-30 13:11:59"
+  },
+  {
+    "id": 17,
+    "title": "6G Briefing 2024",
+    "url": "./assets/imagens/events/6g-briefing.jpg",
+    "description": "Conferência de dois dias sobre redes 6G.",
+    "event_date": "2024-12-30",
+    "created_at": "2024-12-20 16:22:44"
+  },
+  {
+    "id": 18,
+    "title": "HOBA® for Executives",
+    "url": "./assets/imagens/events/hoba-workshop.jpg",
+    "description": "Workshop de um dia sobre HOBA para executivos.",
+    "event_date": "2025-01-08",
+    "created_at": "2024-12-28 12:05:30"
+  },
+  {
+    "id": 19,
+    "title": "Algorythm™| Intro to Machine Learning",
+    "url": "./assets/imagens/events/algorythm.jpg",
+    "description": "Introdução ao aprendizado de máquina.",
+    "event_date": "2024-12-25",
+    "created_at": "2024-12-12 10:30:00"
+  },
+  {
+    "id": 20,
+    "title": "Porta para a Europa: e-Residency e Startup Estonia",
+    "url": "./assets/imagens/events/e-residence.jpg",
+    "description": "Conecta o ecossistema de inovação da Estônia com o Brasil.",
+    "event_date": "2025-01-22",
+    "created_at": "2025-01-10 14:45:19"
+  }
 ]
