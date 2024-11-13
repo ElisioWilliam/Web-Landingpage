@@ -1,6 +1,6 @@
 <?php
     require 'events.php';
-    require 'auth.php'; 
+    require 'auth.php';
 
     if (isset($_GET['id'])) {
         $eventId = intval($_GET['id']);
@@ -39,17 +39,18 @@
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                <a href="sistema-events.php" class="sidebar-link">
+                    <a href="sistema.php" class="sidebar-link">
+                        <i class="lni lni-popup"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="sistema-events.php" class="sidebar-link">
                         <i class="lni lni-agenda"></i>
                         <span>Eventos</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-popup"></i>
-                        <span>Notificações</span>
-                    </a>
-                </li>
+                
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
                         <i class="lni lni-cog"></i>
@@ -90,29 +91,56 @@
             <main class="content px-3 py-4">
                 <div class="container-md">
                     <div class="mb-3">
-                    <?php if ($event): ?>
-                        <div class="evento-detalhe-card">
-                            <img src="<?php echo $event['url_img']; ?>" alt="<?php echo $event['title']; ?>" class="evento-imagem-detalhe">
-                            <div class="event-text-and-button">
+                        <?php if ($event): ?>
+                            <div class="evento-detalhe-card">
+                                <img src="<?php echo $event['url_img']; ?>" alt="<?php echo $event['title']; ?>" class="evento-imagem-detalhe">
+                                <div class="event-text-and-button">
+                                    <div>
+                                        <h2><?php echo htmlspecialchars($event['title']); ?></h2>
+                                        <p class="evento-data"><?php echo formatarData($event['event_date']); ?></p>
+                                        <p class="evento-descricao"><?php echo htmlspecialchars($event['description']); ?></p>
+                                    </div>
 
-                                <div>
-                                    <h2><?php echo htmlspecialchars($event['title']); ?></h2>
-                                    <p class="evento-data"><?php echo formatarData($event['event_date']); ?></p>
-                                    <p class="evento-descricao"><?php echo htmlspecialchars($event['description']); ?></p>
-                                </div>
-                                <div class="subscribe-button">
-                                    <p>Não perca tempo</p>
-                                    <button>Inscreva-se</button>
+                                    <!-- Formulário de inscrição -->
+                                    <div class="subscribe-button">
+                                        <form id="eventForm">
+                                            <input type="hidden" name="event_id" value="<?php echo $event['id']; ?>">
+                                            <button type="button" onclick="openConfirmDialog()">Inscreva-se</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    <?php else: ?>
-                        <p>Evento não encontrado.</p>
-                    <?php endif; ?>
-
+                        <?php else: ?>
+                            <p>Evento não encontrado.</p>
+                        <?php endif; ?>
                     </div>
                 </div>
             </main>
+
+
+            <!-- Diálogo de confirmação -->
+            <div id="confirmDialog" class="dialog-overlay" style="display: none;">
+                <div class="dialog-box">
+                    <p>Tem certeza que deseja se inscrever neste evento?</p>
+                    <button onclick="confirmRegistration()">Sim</button>
+                    <button onclick="closeDialog()">Não</button>
+                </div>
+            </div>
+
+            <!-- Diálogo de mensagens de sucesso/erro e carregamento -->
+            <div id="messageDialog" class="dialog-overlay" style="display: none;">
+                <div class="dialog-box">
+                    <div id="loadingSpinner" style="display: none;">
+                        <div class="spinner"></div>
+                        <p>Processando, por favor aguarde...</p>
+                    </div>
+                    <p id="messageText" style="display: none;"></p>
+                    <button id="closeButton" style="display: none;" onclick="closeDialog()">Fechar</button>
+                </div>
+            </div>
+
+
+
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row text-body-secondary">
@@ -139,6 +167,7 @@
             </footer>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./scripts/sistema.js"></script>
 </body>

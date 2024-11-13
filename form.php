@@ -12,7 +12,7 @@
             exit;
         }
 
-        $result = mysqli_query($connection, "INSERT INTO usuarios (nome, email, senha, data_cadastro) VALUES ('$nome', '$email', '$senha', '$data_atual')");
+        $result = mysqli_query($connection, "INSERT INTO users (username, email, password, created_at) VALUES ('$nome', '$email', '$senha', '$data_atual')");
 
         if ($result) {
             echo json_encode(['success' => true, 'message' => 'Cadastro realizado com sucesso!']);

@@ -7,14 +7,12 @@
         $email = $_POST['email'] ?? '';
         $senha = $_POST['password'] ?? '';
 
-        // Validar campos vazios
         if (empty($email) || empty($senha)) {
             echo json_encode(['success' => false, 'message' => 'Todos os campos são obrigatórios.']);
             exit;
         }
 
-        // Usar prepared statements para evitar SQL injection
-        $stmt = $connection->prepare("SELECT * FROM usuarios WHERE email = ? LIMIT 1");
+        $stmt = $connection->prepare("SELECT * FROM users WHERE email = ? LIMIT 1");
         if (!$stmt) {
             echo json_encode(['success' => false, 'message' => 'Erro na preparação da consulta.']);
             exit;
@@ -25,10 +23,10 @@
         $result = $stmt->get_result();
         $usuario = $result->fetch_assoc();
         
-        if ($usuario && password_verify($senha, $usuario['senha'])) {
+        if ($usuario && password_verify($senha, $usuario['password'])) {
             $_SESSION['user_id'] = $usuario['id'];;
             $_SESSION['email'] = $email;
-            $_SESSION['nome'] = $usuario['nome'];
+            $_SESSION['nome'] = $usuario['username'];
             echo json_encode(['success' => true, 'message' => 'Usuário logado!']);
         } else {
             unset($_SESSION['user_id']);
