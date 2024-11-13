@@ -32,15 +32,15 @@
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                <a href="sistema-events.php" class="sidebar-link">
-                        <i class="lni lni-agenda"></i>
-                        <span>Eventos</span>
+                    <a href="sistema.php" class="sidebar-link">
+                        <i class="lni lni-popup"></i>
+                        <span>Inicio</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-popup"></i>
-                        <span>Notificações</span>
+                    <a href="sistema-events.php" class="sidebar-link">
+                        <i class="lni lni-agenda"></i>
+                        <span>Eventos</span>
                     </a>
                 </li>
                 <li class="sidebar-item">

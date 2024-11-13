@@ -31,15 +31,15 @@
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                    <a href="sistema-events.php" class="sidebar-link">
-                        <i class="lni lni-agenda"></i>
-                        <span>Eventos</span>
+                    <a href="sistema.php" class="sidebar-link">
+                        <i class="lni lni-popup"></i>
+                        <span>Inicio</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-popup"></i>
-                        <span>Notificações</span>
+                    <a href="sistema-events.php" class="sidebar-link">
+                        <i class="lni lni-agenda"></i>
+                        <span>Eventos</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
@@ -86,8 +86,8 @@
                             echo "<h3 class='fw-bold fs-4 mb-3'>Seja bem vindo $logado</h3>"
                         ?>
                         <?php if (!empty($userEvents)): ?>
-                        <table border="1" cellpadding="10" cellspacing="0" class="w-100">
-                            <tr>
+                        <table border="1" cellpadding="10" cellspacing="0" class="w-100 table">
+                            <tr class="table-secondary">
                                 <th>ID</th>
                                 <th>Nome do Evento</th>
                                 <th>Descrição</th>
@@ -95,10 +95,10 @@
                             </tr>
                             <?php foreach ($userEvents as $event): ?>
                                 <tr>
-                                    <td><?php echo htmlspecialchars($event['id']); ?></td>
-                                    <td><?php echo htmlspecialchars($event['title']); ?></td>
-                                    <td><?php echo htmlspecialchars($event['description']); ?></td>
-                                    <td><?php echo htmlspecialchars($event['event_date']); ?></td>
+                                    <td class="row-table"><?php echo htmlspecialchars($event['id']); ?></td>
+                                    <td class="row-table"><?php echo htmlspecialchars($event['title']); ?></td>
+                                    <td class="row-table"><?php echo htmlspecialchars($event['description']); ?></td>
+                                    <td class="row-table"><?php echo htmlspecialchars($event['event_date']); ?></td>
                                 </tr>
                             <?php endforeach; ?>
                         </table>

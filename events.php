@@ -7,7 +7,7 @@ function getUserEvents($connection, $userId) {
     $query = "SELECT events.id, events.title, events.description, events.event_date 
               FROM events
               INNER JOIN user_events ON events.id = user_events.event_id
-              WHERE user_events.usuario_id = ?";
+              WHERE user_events.user_id = ?";
               
     $stmt = $connection->prepare($query);
     $stmt->bind_param("i", $userId);
